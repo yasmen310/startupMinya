@@ -1,0 +1,335 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;/*scroll علشان اشوف باقي الصفحات وانا بعمل */
+    
+}
+
+.headClass{
+    background-color: rgb(67, 67, 250);
+    width:100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* محاذاه للdiv */
+    border-top: 3px solid red ;
+    position: fixed;
+    padding: 0px 100px;   /* box-sizeing*/
+    z-index: 9999;
+}
+h1{
+    font-size: 30px;
+    color: bisque;
+    padding: 10px;
+}
+.navClass{
+    padding: 20px;
+    margin-right: 10px;
+}
+.navClass a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    color: bisque;
+    margin-right: 5px;
+    transition: ease 0.5s;
+}
+.navClass a:hover{
+    font-size: 20px;
+    /* transform: scale(1.1); */
+    color:brown;
+}
+.carsourClass{
+    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url("photo/Wikimedia_2016_-34\ \(1\).jpg");
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: bisque;
+}
+.carsourClass div{
+    margin-left: 30px;
+}
+.carsourClass span{
+    color: red;
+    font-size: 30px;
+}
+.carsourClass a{
+    text-decoration: none;
+    color: bisque;
+    /* background-color: blueviolet; */
+    border: 2px solid red;
+    padding: 13px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 15px;
+    transition: ease 0.5s;
+}
+.carsourClass a:hover{
+    transform: scale(1.1);
+    background-color: red;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.servicesClass h3{
+  text-align: center;
+  color:rgb(201, 127, 17);
+  font-size: xx-large;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.container{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+}
+.servicesClass .card{
+      width:30%;
+      background-color: beige;
+      text-align: center;
+      color: black;
+      box-shadow: 3px 3px 6px 6px gray ;
+      margin-bottom: 30px;
+      padding: 10px;
+}
+.container h3{
+    color: brown;
+}
+.card i{
+    font-size: 30px;
+    color: blue;
+}
+.portfolio{
+    background-color: darkslategray;
+    color: bisque;
+    text-align: center;
+}
+.portfolio h2{
+    color:rgb(172, 96, 3);
+    border-bottom: 3px solid rgb(19, 18, 18);
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.portfolio .container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.portfolio .card{
+    color: darkmagenta;
+    background-color: bisque;
+    width: 30%;
+    border-radius: 20px;
+    border: 3px solid black;
+    margin-bottom: 30px;
+    overflow: hidden;   
+    /* علشان اشيل الزياده من الصوره 
+    cut increasing  ->don't need add border radius image
+    cooki icon.png */
+}
+.portfolio img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    
+}
+.portfolio button{
+    padding:10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(8, 182, 124);
+    font-size: 15px;
+    color: bisque;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: ease 0.5s;
+
+}
+.portfolio p{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.portfolio button:hover{
+    transform: scale(1.2);
+}
+.NTIgroup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px;
+
+}
+.NTIdes{
+    text-align: center;
+    width:60%;
+    line-height: 30px;
+}
+.NTIimage{
+    width: 40%;
+    padding:10px;
+    margin-right: 10px;
+    box-shadow: 0px 0px 2px gray;
+    overflow: hidden;
+    border-radius: 10px;
+    padding-left: 100px;
+}
+.NTIimage-rtl {
+    width: 40%;
+    padding: 10px;
+    margin-left: 10px;
+    box-shadow: 0px 0px 2px gray;
+    overflow: hidden;
+    border-radius: 10px;
+    padding-right: 100px;
+}
+.member{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-image: url(photo/خلفيات-1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height:90vh;
+    padding:30px;
+}
+.member img{
+    width:16em;
+    height:16em;
+    border-radius: 50%;
+    border:solid white;
+    margin-left:30px;
+    margin-top:100px;
+}
+.map{
+  display: flex;
+  justify-content: center;
+  padding:100px;
+}
+.map div{
+    width:100%;
+    padding:10px;
+    transition: ease 0.5s;
+  
+}
+
+.map iframe:hover{
+    box-shadow: 0px 10px 35px 0px rgb(209, 30, 30) !important;
+}
+.map iframe {
+    width: 100% !important;
+}
+
+/* https: //www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #292828;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #e20707;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #09a363;
+}
+footer {
+    text-align: center;
+    background-color: rgb(22, 22, 22);
+    color: #e20707;
+    font-style: italic;
+    height: 60px;
+    /* margin-top: 80px; */
+    padding-top: 20px;
+    border-radius: 20px;
+
+}
+
+footer p:hover{
+    font-size: 35px;
+    color: #09a363;
+  
+}
+.up{
+    font-size:40px;
+    color:#e20707;
+    position: fixed;
+    bottom:10px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    border: 5px solid red;
+    border-radius: 50%;
+    padding: 5px;
+
+}
+.up:hover{
+    color: #09a363;
+    
+}
+
+.contact{
+        /* https: //cssgradient.io/ */
+        background: radial-gradient(circle, rgba(185, 173, 119, 1) 8%, rgba(60, 73, 74, 1) 78%);
+        padding:100px;
+        text-align: center;
+}
+.contact h2{
+    color: bisque;
+    margin-bottom:20px ;
+    display: inline-block;   /* علشان الخط يكون تحت الكلمه بس*/
+    border-bottom: solid ;
+}
+/*
+layers
+ parent relative
+ chlid absolute
+ */
+ .inputform{
+    margin-bottom: 20px;
+    position:relative;
+ }
+ .inputform label{
+  position:absolute;
+  top:30%;
+  left:5px;
+  font-size: 16px;
+  transition: ease 1s;
+  pointer-events:none ; /* inputعلشان الكلام يطلع لفوق لما ادوس علي اي مكان جوا ال*/
+ }
+ .inputform input{
+    width:100%;
+    /* padding:15px; */
+    height: 60px;  /* لان حاله التكست بوكس هتتغير معايا علشان كدا استخدمته بدل الpadding*/    
+    border:none;
+    font-size: 16px;
+ }
+ .inputform input:hover ~label,
+ .inputform input:valid~label{
+    /* valid need required in html*/
+   top:4%;
+ }
+ .send{
+    background-color: burlywood;
+    color: bisque;
+    padding:15px 25px;
+    border-radius: 20px;
+    border: none;
+    transition: ease 2s 1s;  /*delay  بيستني ثانيه وبعد كدا يكبر ثانيتين*/
+ }
+ .send:hover
+ {
+    transform: scale(1.1);
+ }
